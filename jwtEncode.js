@@ -3,12 +3,11 @@ const jwt = require("jsonwebtoken");
 const fs =require('fs');
 
 const privateKey = fs.readFileSync('private.key', 'utf8');
-const publicKey = fs.readFileSync('public.key', 'utf8');
 
   var payload ={};
-  payload.username="Raghav";
-  payload.password="Pawar@123";
-  payload.email="raghav@gmail.com";
+  payload.username="Johnsmith";
+  payload.password="Johnsmith@123";
+  payload.email="Johnsmith@example.com";
   payload.id=5;
  
   console.log("Payload", JSON.stringify(payload));
